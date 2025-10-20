@@ -2,11 +2,11 @@ name: schedule job
 
 on:
  schedule:
-   -cron: "0 0 * * *"
+ - cron: "0 0 * * *"
 jobs:
  run-script:
    runs-on: ubuntu-latest
 
    steps:
      - name: print message
-     run: echo "schedule is executed"
+       run: echo "schedule is executed"
